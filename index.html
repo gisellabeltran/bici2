@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Bici ESP32</title>
+
+<style>
+
+body{
+margin:0;
+overflow:hidden;
+background:skyblue;
+font-family:Arial;
+text-align:center;
+}
+
+h1{
+margin-top:20px;
+}
+
+#distancia{
+font-size:40px;
+font-weight:bold;
+}
+
+.bici{
+position:absolute;
+font-size:120px;
+bottom:180px;
+left:40%;
+
+animation:mover 2s infinite alternate;
+}
+
+@keyframes mover{
+from{
+transform:translateX(-20px);
+}
+to{
+transform:translateX(20px);
+}
+}
+
+.calle{
+position:absolute;
+bottom:0;
+width:100%;
+height:180px;
+background:#444;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>🚲 Bicicleta Inteligente</h1>
+
+<div id="distancia">
+Distancia: Conectando...
+</div>
+
+<div class="bici">
+🚲
+</div>
+
+<div class="calle"></div>
+
+</body>
+</html>
